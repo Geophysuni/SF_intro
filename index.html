@@ -3,24 +3,122 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Вебинар</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="block">Text Text Text</div>
-    <article class="theme"></article>
-    <img src="agovbcAaeiQ.jpg" alt="">
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, qui?</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
+    <header>
+        <div class="container">
+            <h1 class="Вебинар">Вебинар</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <h2 class="forms">Заявка на техосмотр</h2>
+            <form>
+                <fieldset>
+                    <legend>Пожалуйста, опишите свой автомобиль</legend>
+                    Марка автомобиля <input type="text" name="trademark" placeholder="Введите марку">
+                    <br>
+                    <br>
+                    Модель <input type="text" name="model" placeholder="Введите модель" required>
+                    <br>
+                    <br>
+                    <p>Коробка передач</p>
+                    АКПП <input type="radio" name="gear" value="auto" checked>
+                    МКПП <input type="radio" name="gear" value="manual">
+                    <br>
+                    <br>
+                    Необходимо проверить:
+                    <br>
+                    <br>
+                    <input type="checkbox" name="type1" value="break">Тормозная жидкость
+                    <br>
+                    <input type="checkbox" name="type2" value="oil">Уровень малсла
+                    <br>
+                    <input type="checkbox" name="type3" value="coolant">Охложд. жидкость
+                    <br>
+                    <input type="checkbox" name="type4" value="suspension">Подвеска
+                    <br>
+                    <br>
+                    Какое масло заливать?
+                    <br>
+                    <select name="oilselect">
+                        <option label=""></option>
+                        <option label="Motul">Motul</option>
+                        <option label="Shell">Shell</option>
+                        <option label="Oleina" disabled>Oleina</option>
+                    </select>
+                    <br>
+                    Цвет покраски суппортов
+                    <input list="colorlist" type="color" value="#cc0000">
+
+                    <datalist id="colorlist">
+                        <option value="#cc0000" label="Красный"></option>
+                        <option value="0800000" label="Зеленый"></option>
+                    </datalist>
+                    <br>
+                    <br>
+                    Дата визита
+                    <input type="date" name="visit" value="2022-11-29" min="2022-11-29" max="2022-12-17">
+                    <br>
+                    <br>
+                    Ваша почта
+                    <input type="email" name="mail">
+                    <br>
+                    <br>
+                    Ваш телефон
+                    <input type="tel" name="phone">
+                    <br>
+                    <br>
+
+                    <input type="submit" name="submit" value="Отправить заявку">
+                    <input type="reset" name="reset" value="Сбросить">
+
+                </fieldset>
+                <p>Прогресс техосмотра</p>
+                <progress value="25" max="100"></progress>
+                <fieldset>
+                    <legend>Обратная связь</legend>
+                    Оцените качество услуг
+                    <input type="range" min="0" max="10" step="1" value="7">
+                    <br>
+                    <br>
+                    Что бы хотелось улучшить?
+                    <br>
+                    <br>
+                    <textarea name="comment" cols="50" rows="7" placeholder="Ваши предложения"></textarea>
+                    <br>
+                    <br>
+                    Порекомендуете наш сервис?
+                    <label for="yes">Да</label>
+                    <input type="radio" id="yes" name="choise" value="yes" checked>
+                    <label for="no">Нет</label>
+                    <input type="radio" id="no" name="choise" value="no">
+                </fieldset>
+            </form>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YMmBuJrtX5Q"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <ul>
+                <li style="list-style-type: circle;">Element</li>
+                <li></li>
+                <li></li>
+
+            </ul>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-block">
+            <p class="footer-text">Sillfactory</p>
+        </div>
+
+    </footer>
 
 </body>
 
